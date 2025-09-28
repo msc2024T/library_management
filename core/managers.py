@@ -1,4 +1,3 @@
-from .models import Book
 from django.db import models
 
 
