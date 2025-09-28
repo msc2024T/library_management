@@ -6,4 +6,4 @@ class BookManager(models.Manager):
 
     def available(self):
 
-        return self.filter(availibility=True)
+        return self.filter(availability=True)
