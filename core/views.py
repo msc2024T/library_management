@@ -7,7 +7,7 @@ from .serializers import BookSerializer, EBookSerializer, AudioBookSerializer
 
 
 class BookViewSet(viewsets.ModelViewSet):
-    permission_classes = [IsAuthenticated]
+
     queryset = Book.objects.all()
     serializer_class = BookSerializer
 
@@ -35,7 +35,6 @@ class BookViewSet(viewsets.ModelViewSet):
 
 
 class EBookViewSet(viewsets.ModelViewSet):
-    permission_classes = [IsAuthenticated]
 
     queryset = EBook.objects.all()
     serializer_class = EBookSerializer
@@ -43,6 +42,5 @@ class EBookViewSet(viewsets.ModelViewSet):
 
 class AudioBookViewSet(viewsets.ModelViewSet):
 
-    permission_classes = [IsAuthenticated]
     queryset = AudioBook.objects.all()
     serializer_class = AudioBookSerializer
